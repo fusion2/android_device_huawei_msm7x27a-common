@@ -11,7 +11,6 @@ to be set in the build.prop.
 Change-Id: Id83fc90d771ca3a7179f2c50d0ae828eb3dbaa9f
 ---
  AndroidManifest.xml                             |  1 +
- res/values/cm_strings.xml                       |  7 ++++
  res/xml/device_info_memory.xml                  |  5 +++
  src/com/android/settings/deviceinfo/Memory.java | 54 ++++++++++++++++++++++++-
  4 files changed, 66 insertions(+), 1 deletion(-)
@@ -28,24 +27,7 @@ index 58f1da4..6a35018 100644
  
      <permission
          android:name="android.permission.REQUEST_SUPERUSER"
-diff --git a/res/values/cm_strings.xml b/res/values/cm_strings.xml
-index c2c2c30..39dab44 100644
---- a/res/values/cm_strings.xml
-+++ b/res/values/cm_strings.xml
-@@ -623,6 +623,13 @@
-     <string name="storage_rescan_media">Rescan media for the storage volume</string>
-     <string name="storage_rescan_media_complete">Scan completed</string>
- 
-+    <!-- Vold Switchable Pair -->
-+    <string name="storage_switch_title">Use external SD as primary</string>
-+    <string name="storage_switch_summary_off">Using expanded internal storage for apps and media</string>
-+    <string name="storage_switch_summary_on">Using SD Card for apps and media</string>
-+    <string name="reboot_prompt_title">Reboot required</string>
-+    <string name="reboot_prompt_message">In order to apply the changed configuration, a reboot is required.\n\nDo you want to reboot now?</string>
-+
-     <!-- Android debugging over WiFi -->
-     <string name="adb_over_network">ADB over network</string>
-     <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi-Fi, USB networks). This setting is reset on reboot</string>
+
 diff --git a/res/xml/device_info_memory.xml b/res/xml/device_info_memory.xml
 index e905f39..2010b2c 100644
 --- a/res/xml/device_info_memory.xml
